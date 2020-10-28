@@ -1,0 +1,16 @@
+.logo {
+  font-family: $logo-font;
+  @include font(700, 26px, 1.192, 0.03em);
+
+  &-light-theme {
+    color: $logo-dark-color;
+  }
+
+  &-dark-theme {
+    color: $logo-light-color;
+  }
+
+  .header & {
+    margin-right: 94px;
+  }
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a
+            class="logo link"
+            href="./index.html"
+            aria-label="логотип веб-студии"
+            lang="en"
+          >
+            <span class="accent">Web</span
+            ><span class="logo-light-theme">Studio</span>
+          </a>
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link active" href="">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="address-list list">
+            <li class="address-list-item">
+              <a
+                class="header-contact-link link"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="header-contact-svg">
+                  <use href="./img/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="address-list-item">
+              <a class="header-contact-link link" href="tel:+380961111111">
+                <svg class="header-contact-svg">
+                  <use href="./img/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!-- PORTFOLIO -->
+      <section class="portfolio section">
+        <div class="container">
+          <h2 class="title" hidden>Проекты</h2>
+          <div class="portfolio-filter">
+            <button class="button-filter" type="button">Все</button>
+            <button class="button-filter" type="button">Веб-сайты</button>
+            <button class="button-filter" type="button">Приложения</button>
+            <button class="button-filter" type="button">Дизайн</button>
+            <button class="button-filter" type="button">Маркетинг</button>
+          </div>
+          <div class="portfolio-content">
+            <ul class="portfolio-list list">
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-1.png"
+                    alt="ноутбук с открытой страницей сайта"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Технокряк - это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">Технокряк</h3>
+                  <p class="portfolio-project">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-2.png"
+                    alt="два баскетболиста в прыжке"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Новый Орлеан - это современный источник распространения
+                      коронавируса. Компании используют это место для цифрового
+                      шпионажа и атак на защищённые сервера конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h3>
+                  <p class="portfolio-project">Дизайн</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-3.png"
+                    alt="логотип рыбного ресторана"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это ресторан для распространения коронавируса. Компании
+                      используют его для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h3>
+                  <p class="portfolio-project">Приложение</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-4.png"
+                    alt="полноразмерные наушники"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это проект для распространения коронавируса. Компании
+                      используют его для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">
+                    Проект <span lang="en">Prime</span>
+                  </h3>
+                  <p class="portfolio-project">Маркетинг</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-5.png"
+                    alt="две коробки на столе"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это проект для распространения коронавируса. Компании
+                      используют его для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">
+                    Проект <span lang="en">Boxes</span>
+                  </h3>
+                  <p class="portfolio-project">Приложение</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-6.png"
+                    alt="монитор с изображением карты мира"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это сайт для распространения коронавируса. Компании
+                      используют его для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle" lang="en">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="portfolio-project">Веб-сайт</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-7.png"
+                    alt="открытый каталог с фотографиями"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это учебник по распространению коронавируса. Компании
+                      используют его для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h3>
+                  <p class="portfolio-project">Дизайн</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-8.png"
+                    alt="бирка с логотипом фирмы"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это площадка для распространения коронавируса. Компании
+                      используют её для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle">
+                    Проект <span lang="en">LAB</span>
+                  </h3>
+                  <p class="portfolio-project">Маркетинг</p>
+                </div>
+              </li>
+              <li class="portfolio-list-item">
+                <div class="portfolio-image-wrapper">
+                  <img
+                    class="portfolio-image"
+                    src="./img/portfolio/project-9.png"
+                    alt="человек работает за ноутбуком"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-overlay-description">
+                      Это приложение для распространения коронавируса. Компании
+                      используют его для цифрового шпионажа и атак только на
+                      защищённые сервера конкурентов и врагов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-subtitle" lang="en">Growing Business</h3>
+                  <p class="portfolio-project">Приложение</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <div class="address-block">
+            <a
+              class="logo link"
+              href="./index.html"
+              aria-label="логотип веб-студии"
+              lang="en"
+            >
+              <span class="accent">Web</span
+              ><span class="logo-dark-theme">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="address-list list">
+                <li class="address-list-item">
+                  <a
+                    class="footer-address-link link"
+                    href="https://goo.gl/maps/ESxDadosqfzoFddv7"
+                    target="_blank"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="address-list-item">
+                  <a
+                    class="footer-contact-link link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address-list-item">
+                  <a class="footer-contact-link link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-block">
+            <h3 class="footer-social-title">Присоединяйтесь</h3>
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a class="social-list-link" href="">
+                  <svg class="social-link-svg">
+                    <use href="./img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""
+                  ><svg class="social-link-svg">
+                    <use href="./img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""
+                  ><svg class="social-link-svg">
+                    <use href="./img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""
+                  ><svg class="social-link-svg">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="email-block">
+            <h3 class="email-input-title">Подпишитесь на рассылку</h3>
+            <form action="#" class="footer-email-form">
+              <input
+                type="email"
+                name="email-input"
+                class="email-input"
+                placeholder="E-mail"
+                required
+              />
+              <button type="submit" class="button-service">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
