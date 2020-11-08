@@ -1,5 +1,9 @@
+//fonts
 $main-font: "Roboto", sans-serif;
 $logo-font: "Raleway", sans-serif;
+
+//colors
+$body-bg-color: #fff;
 $icon-color: #afb1b8;
 $accent-color: #2196f3;
 $hover-button-color: #188ce8;
@@ -15,3 +19,8 @@ $portfolio-border-color: #eee;
 $portfolio-overlay-color: rgba(33, 150, 243, 0.9);
 $footer-contact-color: rgba(255, 255, 255, 0.6);
 $footer-social-color: rgba(255, 255, 255, 0.1);
+
+//breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px;

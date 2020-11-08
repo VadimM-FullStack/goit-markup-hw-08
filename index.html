@@ -8,8 +8,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Студия</title>
@@ -17,17 +17,31 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a
-            class="logo link"
-            href="./index.html"
-            aria-label="логотип веб-студии"
-            lang="en"
-          >
-            <span class="accent">Web</span
-            ><span class="logo-light-theme">Studio</span>
-          </a>
+      <div class="container header-menu">
+        <a
+          class="logo link"
+          href="./index.html"
+          aria-label="логотип веб-студии"
+          lang="en"
+        >
+          <span class="accent">Web</span
+          ><span class="logo-light-theme">Studio</span>
+        </a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="burger-menu-svg" aria-label="Мобильное меню">
+            <use class="burger-open" href="./img/sprite.svg#burger-open"></use>
+            <use
+              class="burger-close"
+              href="./img/sprite.svg#burger-close"
+            ></use>
+          </svg>
+        </button>
+        <nav class="nav" data-menu>
           <ul class="nav-list list">
             <li class="nav-list-item">
               <a class="nav-list-link link active" href="">Студия</a>
@@ -41,30 +55,30 @@
               <a class="nav-list-link link" href="">Контакты</a>
             </li>
           </ul>
+          <address class="header-address">
+            <ul class="address-list list">
+              <li class="address-list-item">
+                <a
+                  class="header-contact-link link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="header-contact-svg" width="16px" height="12px">
+                    <use href="./img/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address-list-item">
+                <a class="header-contact-link link" href="tel:+380961111111">
+                  <svg class="header-contact-svg" width="10px" height="16px">
+                    <use href="./img/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
         </nav>
-        <address class="header-address">
-          <ul class="address-list list">
-            <li class="address-list-item">
-              <a
-                class="header-contact-link link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="header-contact-svg">
-                  <use href="./img/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="address-list-item">
-              <a class="header-contact-link link" href="tel:+380961111111">
-                <svg class="header-contact-svg">
-                  <use href="./img/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
 
@@ -554,5 +568,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
