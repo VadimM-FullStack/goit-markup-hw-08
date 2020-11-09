@@ -75,3 +75,11 @@
     color: $footer-contact-color;
   }
 }
+
+.footer .button-service::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background: url(../img/icon-send.svg);
+}

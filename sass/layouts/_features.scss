@@ -1,0 +1,74 @@
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include sections-paddings-breakpoints(1200px, 94px, 94px);
+}
+
+.features-list {
+  display: block;
+  margin: -15px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
+  flex-wrap: wrap;
+
+  &-item {
+    margin: 15px;
+    flex-basis: calc(50% - 30px);
+    @media screen and (min-width: $breakpoint-mobile) {
+      flex-basis: 450px;
+    }
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex-basis: 354px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      flex-basis: 270px;
+    }
+
+    &::before {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120px;
+      margin-bottom: 30px;
+      background-color: $background-light-color;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 4px;
+    }
+
+    &:nth-child(1)::before {
+      background-image: url(../img/main/features-svg/antenna.svg);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../img/main/features-svg/clock.svg);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../img/main/features-svg/diagram.svg);
+    }
+
+    &:nth-child(4)::before {
+      background-image: url(../img/main/features-svg/astronaut.svg);
+    }
+  }
+}
+
+.features-subtitle {
+  text-align: center;
+  margin-bottom: 10px;
+  @include font(700, 14px, 1.143, 0.03em);
+  text-transform: uppercase;
+  color: $title-color;
+  @media screen and (min-width: $breakpoint-tablet) {
+    text-align: left;
+  }
+}
+
+.features-description {
+  margin: 0;
+  @include font(400, 14px, 1.714, 0.03em);
+  color: $text-dark-color;
+}

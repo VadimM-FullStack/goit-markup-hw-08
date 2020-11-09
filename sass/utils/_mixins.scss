@@ -1,3 +1,16 @@
+@mixin flex-containers-breakpoints() {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+@mixin sections-paddings-breakpoints($m-width, $p-top, $p-bottom) {
+  @media screen and (min-width: $m-width) {
+    padding-top: $p-top;
+    padding-bottom: $p-bottom;
+  }
+}
+
 @mixin font($fw: 400, $fs: 14px, $lh: 1.143, $ls: 0.01em) {
   font-weight: $fw;
   font-size: $fs;
