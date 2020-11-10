@@ -88,7 +88,10 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button class="button-service" type="button" data-modal-open>
             Заказать услугу
           </button>
@@ -139,11 +142,33 @@
           <ul class="activity-list list">
             <li class="activity-list-item">
               <div class="activity-item-wrapper">
-                <img
-                  class="activity-list-img"
-                  src="./img/activity/act-1.jpg"
-                  alt="программист кодит на компьютере и планшете"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main/activity/activity-1@1x.webp 1x,
+                      ./img/main/activity/activity-1@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main/activity/activity-1@1x.jpg 1x,
+                      ./img/main/activity/activity-1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="activity-list-img"
+                    src="./img/main/activity/activity-1@1x.jpg"
+                    srcset="
+                      ./img/main/activity/activity-1@1x.jpg 1x,
+                      ./img/main/activity/activity-1@2x.jpg 2x
+                    "
+                    alt="программист, клавиатура, планшет, монитор, код"
+                  />
+                </picture>
                 <div class="activity-overlay">
                   <p class="activity-description">Десктопные приложения</p>
                 </div>
@@ -151,11 +176,33 @@
             </li>
             <li class="activity-list-item">
               <div class="activity-item-wrapper">
-                <img
-                  class="activity-list-img"
-                  src="./img/activity/act-2.jpg"
-                  alt="дизайнер выбирает вариант оформления приложения"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main/activity/activity-2@1x.webp 1x,
+                      ./img/main/activity/activity-2@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main/activity/activity-2@1x.jpg 1x,
+                      ./img/main/activity/activity-2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="activity-list-img"
+                    src="./img/main/activity/activity-2@1x.jpg"
+                    srcset="
+                      ./img/main/activity/activity-2@1x.jpg 1x,
+                      ./img/main/activity/activity-2@2x.jpg 2x
+                    "
+                    alt="архитектор, смартфон, ноутбук, варианты мобильной версии"
+                  />
+                </picture>
                 <div class="activity-overlay">
                   <p class="activity-description">Мобильные приложения</p>
                 </div>
@@ -163,11 +210,33 @@
             </li>
             <li class="activity-list-item">
               <div class="activity-item-wrapper">
-                <img
-                  class="activity-list-img"
-                  src="./img/activity/act-3.jpg"
-                  alt="дизайнер выбирает цвет из палитры на планшете"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main/activity/activity-3@1x.webp 1x,
+                      ./img/main/activity/activity-3@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main/activity/activity-3@1x.jpg 1x,
+                      ./img/main/activity/activity-3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="activity-list-img"
+                    src="./img/main/activity/activity-3@1x.jpg"
+                    srcset="
+                      ./img/main/activity/activity-3@1x.jpg 1x,
+                      ./img/main/activity/activity-3@2x.jpg 2x
+                    "
+                    alt="дизайнер, планшет, цветовая палитра"
+                  />
+                </picture>
                 <div class="activity-overlay">
                   <p class="activity-description">Дизайнерские решения</p>
                 </div>
@@ -183,11 +252,63 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/team/co-worker-1.jpg"
-                alt="улыбающийся мужчина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-1-desktop@1x.webp 1x,
+                    ./img/main/team/desktop/team-1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-1-desktop@1x.jpg 1x,
+                    ./img/main/team/desktop/team-1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-1-tablet@1x.webp 1x,
+                    ./img/main/team/tablet/team-1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-1-tablet@1x.jpg 1x,
+                    ./img/main/team/tablet/team-1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-1-mobile@1x.webp 1x,
+                    ./img/main/team/mobile/team-1-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-1-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-1-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list-img"
+                  src="./img/main/team/mobile/team-1-mobile@1x.jpg"
+                  srcset="
+                    ./img/main/team/mobile/team-1-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-1-mobile@2x.jpg 2x
+                  "
+                  alt="Бородатый парень в очках и рубашке"
+                />
+              </picture>
               <h3 class="team-list-name">Игорь Демьяненко</h3>
               <p class="team-list-position" lang="en">Product Designer</p>
               <ul class="social-list list">
@@ -222,11 +343,63 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/team/co-worker-2.jpg"
-                alt="улыбающаяся женщина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-2-desktop@1x.webp 1x,
+                    ./img/main/team/desktop/team-2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-2-desktop@1x.jpg 1x,
+                    ./img/main/team/desktop/team-2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-2-tablet@1x.webp 1x,
+                    ./img/main/team/tablet/team-2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-2-tablet@1x.jpg 1x,
+                    ./img/main/team/tablet/team-2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-2-mobile@1x.webp 1x,
+                    ./img/main/team/mobile/team-2-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-2-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-2-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list-img"
+                  src="./img/main/team/mobile/team-2-mobile@1x.jpg"
+                  srcset="
+                    ./img/main/team/mobile/team-2-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-2-mobile@2x.jpg 2x
+                  "
+                  alt="Светловолосая девушка в очках и костюме"
+                />
+              </picture>
               <h3 class="team-list-name">Ольга Репина</h3>
               <p class="team-list-position" lang="en">Frontend Developer</p>
               <ul class="social-list list">
@@ -261,11 +434,63 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/team/co-worker-3.jpg"
-                alt="улыбающийся мужчина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-3-desktop@1x.webp 1x,
+                    ./img/main/team/desktop/team-3-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-3-desktop@1x.jpg 1x,
+                    ./img/main/team/desktop/team-3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-3-tablet@1x.webp 1x,
+                    ./img/main/team/tablet/team-3-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-3-tablet@1x.jpg 1x,
+                    ./img/main/team/tablet/team-3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-3-mobile@1x.webp 1x,
+                    ./img/main/team/mobile/team-3-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-3-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-3-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list-img"
+                  src="./img/main/team/mobile/team-3-mobile@1x.jpg"
+                  srcset="
+                    ./img/main/team/mobile/team-3-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-3-mobile@2x.jpg 2x
+                  "
+                  alt="Улыбающийся парень в светлой рубашке"
+                />
+              </picture>
               <h3 class="team-list-name">Николай Тарасов</h3>
               <p class="team-list-position" lang="en">Marketing</p>
               <ul class="social-list list">
@@ -300,11 +525,63 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./img/team/co-worker-4.jpg"
-                alt="улыбающийся мужчина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-4-desktop@1x.webp 1x,
+                    ./img/main/team/desktop/team-4-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/desktop/team-4-desktop@1x.jpg 1x,
+                    ./img/main/team/desktop/team-4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-4-tablet@1x.webp 1x,
+                    ./img/main/team/tablet/team-4-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/tablet/team-4-tablet@1x.jpg 1x,
+                    ./img/main/team/tablet/team-4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 769px)"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-4-mobile@1x.webp 1x,
+                    ./img/main/team/mobile/team-4-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/main/team/mobile/team-4-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-4-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list-img"
+                  src="./img/main/team/mobile/team-4-mobile@1x.jpg"
+                  srcset="
+                    ./img/main/team/mobile/team-4-mobile@1x.jpg 1x,
+                    ./img/main/team/mobile/team-4-mobile@2x.jpg 2x
+                  "
+                  alt="Бородатый парень в очках и тёмной футболке"
+                />
+              </picture>
               <h3 class="team-list-name">Михаил Ермаков</h3>
               <p class="team-list-position" lang="en">UI Designer</p>
               <ul class="social-list list">

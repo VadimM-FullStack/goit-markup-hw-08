@@ -1,40 +1,46 @@
 .team {
   background: $background-light-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include sections-paddings-breakpoints(1200px, 94px, 94px);
+}
 
-  &-list {
-    @extend %flex-between;
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-wrap: nowrap;
+  }
 
-    &-item {
-      width: 270px;
-      padding-bottom: 30px;
-      background: $logo-light-color;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-    }
+  &-item {
+    padding-bottom: 30px;
+    margin: 15px;
+    background: $logo-light-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-    &-item:not(:last-child) {
-      margin-right: 30px;
-    }
+  &-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 0px;
+  }
 
-    &-img {
-      width: 270px;
-      height: 260px;
-      margin-bottom: 30px;
-    }
+  &-name {
+    margin-bottom: 10px;
+    @include font(500, 16px, 1.186, 0.03em);
+    text-align: center;
+    color: $title-color;
+  }
 
-    &-name {
-      margin-bottom: 10px;
-      @include font(500, 16px, 1.186, 0.03em);
-      text-align: center;
-      color: $title-color;
-    }
-
-    &-position {
-      margin-bottom: 16px;
-      @include font(400, 16px, 1.186, 0.03em);
-      text-align: center;
-      color: $text-dark-color;
-    }
+  &-position {
+    margin-bottom: 16px;
+    @include font(400, 16px, 1.186, 0.03em);
+    text-align: center;
+    color: $text-dark-color;
   }
 }

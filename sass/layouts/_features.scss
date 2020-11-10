@@ -4,6 +4,10 @@
   @include sections-paddings-breakpoints(1200px, 94px, 94px);
 }
 
+.features .container {
+  padding: 0 15px;
+}
+
 .features-list {
   display: block;
   margin: -15px;

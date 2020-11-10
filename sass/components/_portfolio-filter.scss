@@ -1,6 +1,23 @@
+.portfolio.section {
+  padding-top: 94px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding-bottom: 94px;
+  }
+}
+
 .portfolio-filter {
-  @extend %flex-center;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .button-filter {
@@ -18,6 +35,10 @@
 
   &:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover,

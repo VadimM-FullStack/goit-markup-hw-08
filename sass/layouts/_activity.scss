@@ -1,5 +1,11 @@
 .activity {
-  padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
 
   &-list {
     @extend %flex-between;

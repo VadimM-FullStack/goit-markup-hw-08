@@ -1,15 +1,26 @@
-.customers-list {
-  @extend %flex-between;
-  margin: 0 auto;
+.customers.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include sections-paddings-breakpoints(1200px, 94px, 94px);
+}
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+.customers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 
   &-link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 90px;
+    margin: 15px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 226px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      width: 170px;
+    }
   }
 }
 
